@@ -1,34 +1,43 @@
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
-
+import '../src/components/uiComp.js';
 import '../src/index.css';
 import '../src/style.css';
 import '../src/fontawesome.css';
 
-import HubBox from './HubBox';
-import TitleArea from '../src/components/TitleArea';
-
 export default {
-  title: 'ibox',
-  component: {
-    HubBox
-  } 
+  title: 'ibox'
 };
 
-export const Default = () => ({
-  components: {
-    HubBox,
-    TitleArea,
-
-  },
-  data () {
-    return {
-      name: '기본 박스'
-    }
-  },
+export const structureOfAIbox = () => ({
   template: `
-  <hub-box />
-    <title-area :title="name"</title-area>
-    `
+    <ui-comp :part="parts" :codeView=codeView>
+    </ui-comp>`,
+  data(){
+    return{
+      parts:[
+        {
+          title:'ibox의 기본 구조',
+          info:'작성 button과 접고 펴기 toggle button이 포함된 기본 ibox입니다. 필요한 button이 더 있을 시엔 .ibox-tools 내에 추가하여 사용합니다.',
+          code:`
+<div class="ibox m-b-none">
+  <div class="ibox-title">
+    <h5>제목영역</h5>
+    <div class="ibox-tools">
+      <a href="#" title="버튼">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </a>
+      <a href="#" title="버튼">
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+  <div class="ibox-content">
+    내용영역
+  </div>
+</div>`
+        },
+      ],
+      codeView:true
+    }
+  }
 });
 

@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       main: {
-        padding: 15,
+        padding: '40px',
         lineHeight: 1.4,
         fontFamily: '"Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif',
         backgroundColor: '#ffffff',
@@ -49,66 +49,11 @@ export default {
 
   template: `
     <div :style="main">
-      <h1>Welcome to STORYBOOK</h1>
-      <p>
-        This is a UI component dev environment for your app.
-      </p>
-      <p>
-        We've added some basic stories inside the
-        <br />
-        <code :style="code">src/stories</code>
-        <br />
-        directory.
-        <br />
-        A story is a single state of one or more UI components. You can have as many stories as
-        you want.
-        <br />
-        (Basically a story is like a visual test case.)
-      </p>
-      <p>
-        See these sample
-        <br />
-        <a :style="link" @click="onClick" role="button" tabIndex="0">stories</a>
-        <br />
-        for a component called
-        <br />
-        <code :style="code">Button</code>
-        .
-      </p>
-      <p>
-        Just like that, you can add your own components as stories.
-        <br />
-        You can also edit those components and see changes right away.
-        <br />
-        (Try editing the <code :style="code">Button</code> component
-        located at <code :style="code">src/stories/Button.js</code>.)
-      </p>
-      <p>
-        This is just one thing you can do with Storybook.
-        <br />
-        Have a look at the
-        <br />
-        <a
-          :style="link"
-          href="https://github.com/storybookjs/storybook"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Storybook
-        </a>
-        <br />
-        repo for more information.
-      </p>
-      <p :style="note">
-        <b>NOTE:</b>
-        <br />
-        Have a look at the
-        <br />
-        <code :style="code">.storybook/webpack.config.js</code>
-        <br />
-        to add webpack
-        loaders and plugins you are using in this project.
-      </p>
+      이건 .. 하다하다 만든 ui 가이드북! ㅇ.<
+      <br>
+      모두들 이정도는 스스로 해내는 멋진 칭구들이 되자
+      <br>
+      그렇지 않으면 이 험한 세상 살아갈 수 없어요 ~~ 
     </div>
   `,
 

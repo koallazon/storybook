@@ -10031,3 +10031,18 @@ div.white-table textarea {
 div.white-table select {
   border:0;
 }
+
+/*  vue fade in, out */
+.fade-enter {
+  opacity:0;
+}
+.fade-enter-active {
+  transition: opacity .7s;
+}
+.fade-leave {
+  opacity:1;
+}
+.fade-leave-active {
+  transition: opacity .7s;
+  opacity:0;
+}
