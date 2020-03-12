@@ -48,8 +48,8 @@ Vue.component('ui-comp',{
         paddingBottom:'10px',
         marginBottom:'10px',
         paddingLeft:'10px',
-        fontWeight:'500',
-        fontSize:'28px'
+        fontWeight:'700',
+        fontSize:'25px'
       },
       // info 영역 stlye
       infoSt:{
@@ -87,7 +87,7 @@ Vue.component('ui-comp',{
         position:'fixed',
         top:'20px',
         left:'50%',
-        marginLeft:'-210px',
+        marginLeft:'-255px',
         backgroundColor:'#73acf3',
         color:'#fff',
         padding:'20px 30px',
@@ -96,7 +96,7 @@ Vue.component('ui-comp',{
       },
       // 코드 미리보기 
       preview:{
-        minWidth:'400px',
+        minWidth:'500px',
         padding:'0 10px',
         display:'inline-block',
         marginTop:'15px'
