@@ -20,8 +20,7 @@ Vue.component('ui-comp',{
                 <h1 :style="titleSt">
                     # {{con.title}}
                 </h1>
-                <div :style="infoSt">
-                  {{con.info}}
+                <div :style="infoSt" v-html="con.info">
                 </div>
                 <div v-html="con.code" v-if="codeView" :style="preview">
                 </div>
@@ -48,8 +47,8 @@ Vue.component('ui-comp',{
         paddingBottom:'10px',
         marginBottom:'10px',
         paddingLeft:'10px',
-        fontWeight:'700',
-        fontSize:'25px'
+        fontWeight:'500',
+        fontSize:'28px'
       },
       // info 영역 stlye
       infoSt:{
@@ -87,7 +86,7 @@ Vue.component('ui-comp',{
         position:'fixed',
         top:'20px',
         left:'50%',
-        marginLeft:'-255px',
+        marginLeft:'-210px',
         backgroundColor:'#73acf3',
         color:'#fff',
         padding:'20px 30px',
@@ -96,7 +95,7 @@ Vue.component('ui-comp',{
       },
       // 코드 미리보기 
       preview:{
-        minWidth:'500px',
+        minWidth:'400px',
         padding:'0 10px',
         display:'inline-block',
         marginTop:'15px'

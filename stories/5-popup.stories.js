@@ -13,11 +13,11 @@ export const popup = () => ({
     </ui-comp>`,
   data(){
     return{
-        parts:[
-          {
-            title:'modal popup',
-            info:'bootstrap에서 제공하는 modal popup의 기본 형태입니다. modal을 실행시킬 button에는 data-toggle="modal"과 data-target="modal의 id"를 추가해줍니다.',
-            code:`
+      parts:[
+        {
+          title:'modal popup',
+          info:'bootstrap에서 제공하는 modal popup의 기본 형태입니다. modal을 실행시킬 button에는 data-toggle="modal"과 data-target="modal의 id"를 추가해줍니다.',
+          code:`
 <div class="modal inmodal" id="modal-id" style="display:none">
   <div class="modal-dialog modal-md">
     <div class="modal-content">
@@ -39,11 +39,6 @@ export const popup = () => ({
     </div>
   </div>
 </div>`
-          },
-          {
-          title:'window popup',
-          info:'아 귀찮아',
-          code:``
         }
       ],
       codeView:false

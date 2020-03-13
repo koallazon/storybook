@@ -16,7 +16,7 @@ export const input = () => ({
       parts:[
         {
           title:'단일 input',
-          info:'input을 input이라하지 뭐라하냐',
+          info:'검색 또는 저장의 용도로 하나의 input과 하나의 button을 나타낼 때 사용합니다.',
           code:`
 <form name="" class="form-inline">
   <div class="input-group">
